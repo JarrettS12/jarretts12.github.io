@@ -1,0 +1,28 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f4f6f8;
+  padding: 40px;
+}
+
+.hidden {
+  display: none;
+}
+
+.email {
+  background: white;
+  padding: 10px;
+  margin: 10px 0;
+  cursor: pointer;
+  border-left: 4px solid #0078d4;
+}
+
+button {
+  padding: 8px 15px;
+  margin-top: 10px;
+}
+
+.report {
+  background: red;
+  color: white;
+  border: none;
+}

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Security Awareness Demo</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<div id="login">
+  <h2>Employee Email Login</h2>
+  <input type="password" id="password" placeholder="Password" />
+  <button onclick="login()">Login</button>
+  <p id="login-error"></p>
+</div>
+
+<div id="inbox" class="hidden">
+  <h2>Inbox</h2>
+
+  <div class="email" onclick="openEmail()">
+    <strong>IT Support</strong> – Action Required
+  </div>
+
+  <div class="email">
+    <strong>HR</strong> – Benefits Update
+  </div>
+
+  <div class="email">
+    <strong>Amazon</strong> – Invoice Attached
+  </div>
+</div>
+
+<div id="email-view" class="hidden">
+  <h2>IT Support</h2>
+  <p><b>From:</b> it-support@secure-login-alerts.com</p>
+  <p><b>Subject:</b> Password Expiring</p>
+
+  <p>
+    Your password will expire today. Click the link below to prevent account suspension.
+  </p>
+
+  <a href="#">https://secure-login-alerts.com/reset</a>
+
+  <br><br>
+  <button class="report" onclick="reportPhish()">🚨 Report Phishing</button>
+</div>
+
+<div id="reported" class="hidden">
+  <h2>✅ Report Submitted</h2>
+  <p>This email has been sent to the security team.</p>
+  <p>Ticket ID: <b>#PH-1047</b></p>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
